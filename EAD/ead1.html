@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>LC</title>
+</head>
+
+<body>
+    <header>
+        <h1>EAD 1</h1>
+        <div>
+            <a href="../ead.html" class="menu__link">Voltar</a>
+        </div>
+    </header>
+    <main>
+        <div class="boxA">
+            <div class="boxB">
+                <ul style="font-weight: 600;">
+                    <li>O que é variável? Qual a sua finalidade?</li>
+                    <li>Quais os tipos de variáveis podemos ter?</li>
+                </ul>
+            </div>
+            <div class="boxC">
+                <p>Em JavaScript, uma variável é um identificador usado para armazenar valores, como números, strings,
+                    objetos, funções e outros tipos de dados. A finalidade das variáveis é tornar o código mais legível
+                    e mantível, fornecendo nomes significativos aos valores que são usados ou manipulados no programa.
+                </p>
+                <p>
+                    O objetivo das variáveis ​​é armazenar dados temporariamente para que você possa consultá-los
+                    posteriormente em seu programa. Isso permite organização, legibilidade e manutenção mais fáceis do
+                    código.
+                </p>
+                <p>Você pode declarar uma variável em JavaScript usando a palavra-chave <span
+                        style="font-weight: 600;">let</span>, <span style="font-weight: 600;">const</span> ou <span
+                        style="font-weight: 600;">var</span>. Aqui estão
+                    alguns exemplos:</p>
+            </div>
+            <div class="BoxDAndE">
+                <div class="boxD">
+                    <p class="boxDpText"><span style="color: #aeaeae;">1</span> <span
+                            style="color:chocolate;">let</span>
+                        meuNome <span style="color:chocolate;">=</span> <span style="color: green;">'Joao'</span> ;</p>
+
+                    <p class="boxDpText"><span style="color: #aeaeae;">2</span> <span
+                            style="color:chocolate;">let</span>
+                        idade <span style="color:chocolate;">=</span> <span style="color: rgb(250, 104, 0);">25</span> ;
+                    </p>
+
+                    <p class="boxDpText"><span style="color: #aeaeae;">3</span> <span
+                            style="color:chocolate;">let</span>
+                        euExisto <span style="color:chocolate;">=</span> <span style="color: yellow">true</span> ;</p>
+
+                    <p><span style="color: #aeaeae;">4</span></p>
+
+                    <p class="boxDpText"><span style="color: #aeaeae;">5</span> <span
+                            style="color:chocolate;">const</span>
+                        PI <span style="color:chocolate;">=</span> <span style="color: rgb(250, 104, 0);">3.14</span> ;
+                    </p>
+
+                    <p class="boxDpText"><span style="color: #aeaeae;">6</span> <span
+                            style="color:chocolate;">var</span>
+                        salario ;
+                    </p>
+
+                    <p><span style="color: #aeaeae;">7</span></p>
+
+                    <p class="boxDpText"><span style="color: #aeaeae;">8</span> salario <span
+                            style="color:chocolate;">=</span> <span style="color: rgb(250, 104, 0);">1500</span> ;
+                    </p>
+                    <p class="boxDpText"><span style="color: #aeaeae;">9</span> salario <span
+                            style="color:chocolate;">=</span> <span style="color: rgb(250, 104, 0);">2500</span> ;
+                </div>
+                <div class="boxE">
+                    <p><span style="color:chocolate; font-weight:600">Let</span>:
+                        Em algumas linguagens de programação, você pode criar variáveis que só podem ser usadas dentro
+                        de um pequeno pedaço de código, como um bloco, uma linha ou uma expressão.</p>
+
+                    <p><span style="color:chocolate; font-weight:600">Const</span>: Define uma função que retorna sempre
+                        o
+                        mesmo resultado, ou seja, um valor constante.</p>
+                    <p><span style="color:chocolate; font-weight:600">Var</span>: é uma palavra-chave em JavaScript
+                        usada para declarar variáveis, mas foi em grande parte substituída.</p>
+                </div>
+            </div>
+            <div class="boxC">
+                <p>
+                    Ao trabalhar com variáveis, é essencial seguir as melhores práticas, como usar nomes significativos
+                    e
+                    declarar variáveis ​​perto de onde elas são usadas. Isso ajudará a tornar seu código mais legível e
+                    fácil de manter.
+                </p>
+            </div>
+        </div>
+
+        <div class="boxA">
+            <div class="boxB">
+                <p style="font-weight: 600;">Para que serve os comandos alert, prompt e document.write? Quais as suas
+                    diferenças?</p>
+            </div>
+            <div class="boxC">
+                <h2>alert</h2>
+                <p>A função é usada para exibir uma mensagem simples ao usuário em uma caixa de diálogo. A caixa de
+                    diálogo contém um botão OK e o usuário só pode descartá-la clicando em OK. Nenhuma entrada é
+                    possível e a página não é atualizada ou alterada.</p>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span style="color: #aeaeae;">1</span>
+                    <span style="color:purple;">alert</span> ( <span style="color: green;">' Hello world! '</span> ) ;
+                </p>
+            </div>
+            <div class="boxC">
+                <h2>prompt()</h2>
+                <p>A função é usada para solicitar entrada do usuário em uma caixa de diálogo. A caixa de diálogo contém
+                    um campo de entrada de texto e botões OK e Cancelar. Se o usuário clicar em OK, o valor de entrada
+                    será retornado; se o usuário clicar em Cancelar, será cancelado.</p>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span style="color: #aeaeae;">1</span> <span style="color:chocolate;">let</span>
+                    userName <span style="color:chocolate;">=</span> <span style="color:purple;">prompt</span> ( <span
+                        style="color:green;">' Digite seu nome: '</span> ) ;</p>
+                <p class="boxDpText"><span style="color: #aeaeae;">2</span>
+                    <span style="color:purple;">alert</span> ( <span style="color: green;">' Hello, '</span> , userName
+                    , <span style="color: green;">' ! '</span> ) ;
+                </p>
+            </div>
+            <div class="boxC">
+                <h2>document.write()</h2>
+                <p>A função é usada para escrever conteúdo HTML diretamente no documento atual. Pode alterar o conteúdo
+                    e a
+                    estrutura da página. Geralmente não é recomendado para código de produção, pois pode causar
+                    problemas na
+                    renderização da página e na experiência do usuário.</p>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span style="color: #aeaeae;">1</span> <span
+                        style="color: blue;">document.write</span> ( <span style="color: green;">' Hello World !
+                        '</span> ) ;</p>
+            </div>
+        </div>
+
+        <div class="boxA">
+            <div class="boxB">
+                <p style="font-weight: 600;">Como represento números reais na linguagem computacional?</p>
+            </div>
+            <div class="boxC">
+                <p>A representação dos números é feita usando a função <span style="font-weight: 600;">Number()</span>,
+                    pois ela define que é um número. Sem ela, a
+                    digitação será considerada como texto. Mesmo que seja digitado um número, ele será convertido em
+                    string.</p>
+            </div>
+        </div>
+        <div class="boxA">
+            <div class="boxB">
+                <p style="font-weight: 600;">Analise o seguinte código:</p>
+            </div>
+            <div class="boxC">
+                <p>O código abaixo apresenta um erro de lógica. Qual é esse erro? Qual será o valor apresentado no alert
+                    quando eu digitar o número 1 e número 2? O que eu preciso mudar no código (acrescentar ou remover
+                    comandos) para que me apresenta a somatória dos dois números digitados?</p>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span style="color: #aeaeae;">1</span> <span style="color:chocolate;">let</span>
+                    a, b, total ;</p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">2</span> a <span style="color:chocolate;">=</span>
+                    <span style="color: purple;">prompt</span> ( <span style="color: green;">" Informe um número
+                        "</span> ) ;
+                </p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">3</span> b <span style="color:chocolate;">=</span>
+                    <span style="color: purple;">prompt</span> ( <span style="color: green;">" Informe o segundo número
+                        "</span> ) ;
+                </p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">4</span> total <span
+                        style="color:chocolate;">=</span> a <span style="color:chocolate;">+</span> b ;</p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">5</span>
+                    <span style="color: purple;">alert</span> ( <span style="color: green;">" O valor da somatória entre
+                        os dois números é:
+                        "</span> <span style="color:chocolate;">+</span> total ) ;
+                </p>
+            </div>
+
+            <div class="boxC">
+                O erro de lógica no código acima está na conversão de strings para números antes de realizar as
+                operações matemáticas. O método <span style="font-weight: 600;">prompt</span> retorna uma string, e
+                quando você tenta somar duas strings, o
+                resultado é a concatenação das strings, e não a soma dos números.
+            </div>
+            <div class="boxC">
+                <h2>parseFloat()</h2>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span style="color: #aeaeae;">1</span> <span style="color:chocolate;">let</span>
+                    a, b, total ;</p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">2</span> a <span style="color:chocolate;">=</span>
+                    <span style="color: purple;">parseFloat</span> (
+                    <span style="color: purple;">prompt</span> ( <span style="color: green;">" Informe um número
+                        "</span> ) ) ;
+                </p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">3</span> b <span style="color:chocolate;">=</span>
+                    <span style="color: purple;">parseFloat</span> (
+                    <span style="color: purple;">prompt</span> ( <span style="color: green;">" Informe o segundo número
+                        "</span> ) ) ;
+                </p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">4</span> total <span
+                        style="color:chocolate;">=</span> a <span style="color:chocolate;">+</span> b ;</p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">5</span>
+                    <span style="color: purple;">alert</span> ( <span style="color: green;">" O valor da somatória entre
+                        os dois números é:
+                        "</span> <span style="color:chocolate;">+</span> total ) ;
+                </p>
+            </div>
+
+            <div class="boxC">
+                <h2>+</h2>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span style="color: #aeaeae;">1</span> <span style="color:chocolate;">let</span>
+                    a, b, total ;</p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">2</span> a <span style="color:chocolate;">=</span>
+                    <span style="color: purple;">+</span>
+                    <span style="color: purple;">prompt</span> ( <span style="color: green;">" Informe um número
+                        "</span> ) ;
+                </p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">3</span> b <span style="color:chocolate;">=</span>
+                    <span style="color: purple;">+</span>
+                    <span style="color: purple;">prompt</span> ( <span style="color: green;">" Informe o segundo número
+                        "</span> ) ;
+                </p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">4</span> total <span
+                        style="color:chocolate;">=</span> a <span style="color:chocolate;">+</span> b ;</p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">5</span>
+                    <span style="color: purple;">alert</span> ( <span style="color: green;">" O valor da somatória entre
+                        os dois números é:
+                        "</span> <span style="color:chocolate;">+</span> total ) ;
+                </p>
+            </div>
+
+            <div class="boxC">
+                <h2>Number()</h2>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span style="color: #aeaeae;">1</span> <span style="color:chocolate;">let</span>
+                    a, b, total ;</p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">2</span> a <span style="color:chocolate;">=</span>
+                    <span style="color: purple;">Number</span> (
+                    <span style="color: purple;">prompt</span> ( <span style="color: green;">" Informe um número
+                        "</span> ) ) ;
+                </p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">3</span> b <span style="color:chocolate;">=</span>
+                    <span style="color: purple;">Number</span> (
+                    <span style="color: purple;">prompt</span> ( <span style="color: green;">" Informe o segundo número
+                        "</span> ) ) ;
+                </p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">4</span> total <span
+                        style="color:chocolate;">=</span> a <span style="color:chocolate;">+</span> b ;</p>
+
+                <p class="boxDpText"><span style="color: #aeaeae;">5</span>
+                    <span style="color: purple;">alert</span> ( <span style="color: green;">" O valor da somatória entre
+                        os dois números é:
+                        "</span> <span style="color:chocolate;">+</span> total ) ;
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

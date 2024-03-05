@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>LC</title>
+</head>
+
+<body>
+    <header>
+        <h1>EAD 2</h1>
+        <div>
+            <a href="../ead.html" class="menu__link">Voltar</a>
+        </div>
+    </header>
+    <main>
+        <div class="boxA">
+            <div class="boxB">
+                <p>Qual o objetivo da estrutura condicional IF - ELSE ? De um exemplo.</p>
+            </div>
+            <div class="boxC">
+                <p>O objetivo da estrutura condicional <span style="font-weight: 600;">if-else</span> em JavaScript (ou
+                    qualquer outra linguagem de
+                    programação) é permitir que o programa tome decisões baseadas em uma condição específica. Ela
+                    permite que você execute diferentes blocos de código dependendo se a condição é verdadeira ou falsa.
+                </p>
+            </div>
+            <div class="boxDAndE">
+                <div class="boxD">
+                    <p class="boxDpText"><span class="numberListD">1</span> <span class="tag">let</span> idade <span
+                            class="tag">=</span> <span class="number">18</span> ;</p>
+                    <p class="boxDpText"><span class="numberListD">2</span></p>
+                    <p class="boxDpText"><span class="numberListD">3</span> <span class="tag">if</span> ( idade >= 18 )
+                        {
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">4</span> ㅤ <span class="funcao">console.log</span> (
+                        <span class="string">" Você é maior de idade. "</span> ) ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">5</span> } <span class="tag">else</span> {</p>
+                    <p class="boxDpText"><span class="numberListD">6</span> ㅤ <span class="funcao">console.log</span> (
+                        <span class="string">" Você é menor de idade. "</span> ) ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">7</span> } </p>
+                </div>
+
+                <div class="boxE">
+                    <p>Neste exemplo, o programa verifica a idade e imprime uma mensagem diferente dependendo se a
+                        pessoa é maior ou menor de idade.</p>
+                    <p>Você também pode encadear várias cláusulas <span style="font-weight: 600;">if-else</span> para
+                        criar condições mais complexas. Neste
+                        caso, é possível utilizar a cláusula <span style="font-weight: 600;">else if</span> para testar
+                        outras condições antes de chegar na
+                        cláusula <span style="font-weight: 600;">else</span>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="boxA">
+            <div class="boxB">
+                <p>De um exemplo de quando podemos usar a estrutura condicional SWITCH - CASE;</p>
+            </div>
+            <div class="boxC">
+                <p>A estrutura condicional <span style="font-weight: 600;">switch-case</span> em JavaScript é usada
+                    quando você deseja testar uma expressão
+                    contra múltiplos valores possíveis e executar um bloco de código diferente para cada um desses
+                    valores. Ela pode ser uma alternativa mais concisa e legível do que várias cláusulas if-else
+                    encadeadas, especialmente quando você tem muitas condições para testar.</p>
+            </div>
+            <div class="boxDAndE">
+                <div class="boxD">
+                    <p class="boxDpText"><span class="numberListD">1</span> <span class="tag">let</span> diaDaSemana
+                        <span class="tag">=</span> <span class="number">3</span> ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">2</span></p>
+                    <p class="boxDpText"><span class="numberListD">3</span> <span class="tag">switch</span> (
+                        diaDaSemana )
+                        {
+                    </p>
+
+                    <p class="boxDpText"><span class="numberListD">4</span> ㅤ <span class="tag">case</span> <span
+                            class="number">1</span> <span class="tag">:</span>
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">5</span> ㅤㅤ <span class="funcao">console.log</span> (
+                        <span class="string">" Domingo "</span> ) ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">6</span> ㅤㅤ <span class="tag">break</span> ;
+                    </p>
+
+
+                    <p class="boxDpText"><span class="numberListD">7</span> ㅤ <span class="tag">case</span> <span
+                            class="number">2</span> <span class="tag">:</span>
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">8</span> ㅤㅤ <span class="funcao">console.log</span> (
+                        <span class="string">" Segunda-feira "</span> ) ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">9</span> ㅤㅤ <span class="tag">break</span> ;
+                    </p>
+
+                    <p class="boxDpText"><span class="numberListD">10</span> ㅤ <span class="tag">case</span> <span
+                            class="number">3</span> <span class="tag">:</span>
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">11</span> ㅤㅤ <span class="funcao">console.log</span>
+                        (
+                        <span class="string">" Terça-feira "</span> ) ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">12</span> ㅤㅤ <span class="tag">break</span> ;
+                    </p>
+
+                    <p class="boxDpText"><span class="numberListD">13</span> ㅤ <span class="tag">case</span> <span
+                            class="number">4</span> <span class="tag">:</span>
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">14</span> ㅤㅤ <span class="funcao">console.log</span>
+                        (
+                        <span class="string">" Quarta-feira "</span> ) ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">15</span> ㅤㅤ <span class="tag">break</span> ;
+                    </p>
+
+                    <p class="boxDpText"><span class="numberListD">16</span> ㅤ <span class="tag">case</span> <span
+                            class="number">5</span> <span class="tag">:</span>
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">17</span> ㅤㅤ <span class="funcao">console.log</span>
+                        (
+                        <span class="string">" Quinta-feira "</span> ) ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">18</span> ㅤㅤ <span class="tag">break</span> ;
+                    </p>
+
+                    <p class="boxDpText"><span class="numberListD">19</span> ㅤ <span class="tag">case</span> <span
+                            class="number">6</span> <span class="tag">:</span>
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">20</span> ㅤㅤ <span class="funcao">console.log</span>
+                        (
+                        <span class="string">" Sexta-feira "</span> ) ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">21</span> ㅤㅤ <span class="tag">break</span> ;
+                    </p>
+
+                    <p class="boxDpText"><span class="numberListD">22</span> ㅤ <span class="tag">case</span> <span
+                            class="number">7</span> <span class="tag">:</span>
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">23</span> ㅤㅤ <span class="funcao">console.log</span>
+                        (
+                        <span class="string">" Sabado "</span> ) ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">24</span> ㅤㅤ <span class="tag">break</span> ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">25</span> ㅤㅤ <span class="tag">default :</span>
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">26</span> ㅤㅤ <span class="funcao">console.log</span>
+                        (
+                        <span class="string">" Dia inválido "</span> ) ;
+                    </p>
+                    <p class="boxDpText"><span class="numberListD">27</span> }
+                    </p>
+                </div>
+                <div class="boxE" style="width: 110%;">
+                    <p>Uma coisa importante a se lembrar é que, se você omitir o <span
+                            style="font-weight: 600;">break</span> no final de um caso, o código
+                        continuará a ser executado no próximo caso. Isso pode ser útil em algumas situações, mas
+                        geralmente é considerado uma má prática, pois pode levar a resultados inesperados. Para evitar
+                        isso, você pode usar a instrução <span style="font-weight: 600;">fallthrough</span> para indicar
+                        que deseja que o código continue a ser
+                        executado no próximo caso.</p>
+                </div>
+            </div>
+            <div class="boxA">
+                <div class="boxB">
+                    <p style="font-weight: 600;">Exercícios</p>
+                </div>
+                <div class="boxC">
+                    <table>
+                        <tr>
+                            <th>Page</th>
+                        </tr>
+                        <tr>
+                            <td><a href="../eadExercicios/ead2-1.html" class="menu__link" target="_blank">Exercício 1</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../eadExercicios/ead2-2.html" class="menu__link" target="_blank">Exercício 2</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

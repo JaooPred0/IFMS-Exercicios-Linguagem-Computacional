@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        alert('Faça um programa que solicite ao usuário informar dois valores. O primeiro valor, é o preço total de um produto. O segundo valor, será o desconto em porcentagem, pagando a vista. Ao final, seu programa deve informar: De quanto será o desconto, pagando a vista. O valor final do produto (incluído o desconto).');
+
+        let precoTotal = parseFloat(prompt("Informe o preço total do produto:"));
+        let descontoPorcentagem = parseFloat(prompt("Informe o desconto em porcentagem, pagando a vista:"));
+        let descontoValor = (precoTotal * descontoPorcentagem) / 100;
+        let valorFinal = precoTotal - descontoValor;
+
+        alert("Desconto: R$ " + descontoValor);
+        alert("Valor final: R$ " + valorFinal);
+    </script>
+</body>
+
+</html>

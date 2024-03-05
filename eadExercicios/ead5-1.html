@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        alert("Faça um programa que solicita ao usuário informar 10 idades. Ao final, mostre quantas idades foram maiores ou iguais a 18.")
+
+        let idades = [];
+        let maior18 = 0;
+
+        for (let i = 0; i < 10; i++) {
+            let idade = Number(prompt("Digite uma idade qualquer:"));
+            idades[i] = idade;
+            if (idade >= 18) {
+                maior18++;
+            }
+        }
+
+        alert("Quantidade de idades maiores ou iguais a 18: " + idadesMaiores18);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        let num1 = Number(prompt("Digite o primeiro número:"));
+        let operador = prompt("Digite o operador (+, -, *, /):");
+        let num2 = Number(prompt("Digite o segundo número:"));
+
+        let resultado;
+        switch (operador) {
+            case "+":
+                resultado = num1 + num2;
+                break;
+            case "-":
+                resultado = num1 - num2;
+                break;
+            case "*":
+                resultado = num1 * num2;
+                break;
+            case "/":
+                if (num2 == 0) {
+                    alert("Erro: Divisão por zero!");
+                }
+                resultado = num1 / num2;
+                break;
+            default:
+                alert("Erro: Operador inválido!");
+                return;
+        }
+
+        alert("Resultado: " + resultado);
+    </script>
+</body>
+
+</html>

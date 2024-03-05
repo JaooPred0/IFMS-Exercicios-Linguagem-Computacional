@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        alert("Faça um programa que leia um texto. Ao final, mostre quantas vogais o valor lido possui.");
+
+        let text = prompt("Digite um texto:");
+        let contar = 0;
+
+        // Contar o número de vogais no texto
+        for (let i = 0; i < text.length; i++) {
+            let char = text[i].toLowerCase();
+            if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+                contar++;
+            }
+        }
+
+        alert(`O número de vogais no texto é ${contar}.`);
+    </script>
+</body>
+
+</html>

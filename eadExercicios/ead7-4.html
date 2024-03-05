@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        alert('Faça um programa que leia uma palavra e:\na) Informe o tamanho do texto (total de caracteres);\nb) Informe a quantidade de vogais que aparece, de forma separada (Quantas vezes a vogal "a" aparece, quantas vezes a vogal "e" aparece, e assim até a vogal "u");\nc) Se a palavra digitada é um palíndromo. Palíndromos são palavras que lidas de trás para frente mantem o mesmo significado. Exemplos: ovo, arara...');
+
+        let palavra = prompt("Digite uma palavra:");
+        let comprimento = palavra.length;
+        let quantidadeVogais = { a: 0, e: 0, i: 0, o: 0, u: 0 };
+        let palavraReversa = palavra.split('').reverse().join('');
+
+        // Contar o número de vogais na palavra
+        for (let i = 0; i < palavra.length; i++) {
+            let char = palavra[i].toLowerCase();
+            if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+                quantidadeVogais[char]++;
+            }
+        }
+
+        // Verificar se a palavra é um palíndromo
+        let palidrome = palavra.toLowerCase() === palavraReversa.toLowerCase();
+
+        // Exibir os resultados no console
+        alert(`a) Tamanho da palavra: ${comprimento}`);
+        alert(`b) Quantidade de vogais:`);
+        alert(quantidadeVogais);
+        alert(`c) É palíndromo: ${isPalindrome ? 'Sim' : 'Não'}`);
+    </script>
+</body>
+
+</html>

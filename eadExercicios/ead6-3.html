@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        alert(" Faça um programa para um caixa eletrônico. Solicite ao usuário informar um valor a ser retirado. Ao final, informe quantas e quais cédulas serão repassadas ao usuário. Lembrado que o código deve levar sempre em conta o menor número de cédulas possíveis.\nCédulas disponíveis no caixa: 100, 50, 20, 10, 5, 2, 1.");
+
+        let valor = Number(prompt("Informe o valor: "));
+        const cedulas = [100, 50, 20, 10, 5, 2, 1];
+        let quantidadeCedulas = [];
+
+        for (let i = 0; i < cedulas.length; i++) {
+            while (valor >= cedulas[i]) {
+                valor -= cedulas[i];
+                quantidadeCedulas[i]++;
+            }
+        }
+
+        for (let i = 0; i < cedulas.length; i++) {
+            if (quantidadeCedulas[i] > 0) {
+                alert("Cédulas de " + cedulas[i] + ": " + quantidadeCedulas[i]);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

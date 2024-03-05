@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        alert("Faça um programa que solicite ao usuário digitar a idade de N pessoas.\nO programa deve ser finalizado quando a idade digitada for -1. Ao final, informe quantas pessoas usaram o programa.");
+
+        let contadorPessoas = 0;
+        while (true) {
+            const idade = Number(prompt("Digite a idade da pessoa (ou -1 para sair):"));
+            if (idade === "-1") {
+                break;
+            }
+            contadorPessoas++;
+
+            switch (true) {
+                case idade < 13:
+                    alert("A pessoa é uma criança.");
+                    break;
+                case idade >= 13 && idade < 18:
+                    alert("A pessoa é um adolescente.");
+                    break;
+                case idade >= 18 && idade < 65:
+                    alert("A pessoa é um adulto.");
+                    break;
+                default:
+                    alert("A pessoa é um idoso.");
+                    break;
+            }
+        }
+        alert(`Número de pessoas que inseriram sua idade: ${contadorPessoas}`);
+    </script>
+</body>
+
+</html>

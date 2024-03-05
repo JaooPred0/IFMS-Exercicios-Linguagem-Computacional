@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>LC</title>
+</head>
+
+<body>
+    <header>
+        <h1>EAD 5</h1>
+        <div>
+            <a href="../ead.html" class="menu__link">Voltar</a>
+        </div>
+    </header>
+    <main>
+        <div class="boxA">
+            <div class="boxB">
+                <p style="font-weight: 600;">Explique o que é um laço de repetição.</p>
+            </div>
+            <div class="boxC">
+                <p>Um laço de repetição (também conhecido como loop) é uma estrutura de controle de fluxo em JavaScript
+                    que permite executar um bloco de código repetidamente enquanto uma condição específica for
+                    verdadeira. Existem três tipos principais de laços de repetição em JavaScript: <span
+                        style="font-weight: 600;">for, while e
+                        do-while.</span></p>
+                <h2>for()</h2>
+                <p>O laço <span style="font-weight: 600;">for</span> é usado quando você sabe exatamente quantas vezes
+                    deseja
+                    executar o bloco de código. Ele
+                    tem a seguinte sintaxe:</p>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span class="numberListD">1</span> <span class="tag">for</span> ( inicialização;
+                    condição; incremento/decremento ) {</p>
+                <p class="boxDpText"><span class="numberListD">2</span> ㅤ <span class="comentario"> // código a ser
+                        executado enquanto a
+                        condição for verdadeira
+                    </span></p>
+                <p class="boxDpText"><span class="numberListD">3</span> }</p>
+            </div>
+            <div class="boxC">
+                <p>Outro exemplo: </p>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span class="numberListD">1</span> <span class="tag">for</span> (
+                    <span class="tag">let</span> i <span class="tag">=</span> <span class="number">0</span> ; i <span
+                        class="tag">
+                        << /span> <span class="number">10</span> ; i <span class="number">++</span>
+                            ) {
+                </p>
+                <p class="boxDpText"><span class="numberListD">2</span> ㅤ <span class="tag">console.log</span> ( i ) ;
+                    </span></p>
+                <p class="boxDpText"><span class="numberListD">3</span> }</p>
+            </div>
+            <div class="boxC">
+                <p>A inicialização é executada apenas uma vez, antes do início do laço. A condição é avaliada antes de
+                    cada iteração do laço. Se a condição for verdadeira, o bloco de código é executado. Caso contrário,
+                    o laço é interrompido. O incremento/decremento é executado após cada iteração do laço.</p>
+                <h2>while()</h2>
+                <p>O laço <span style="font-weight: 600;">while</span> é usado quando você deseja executar o bloco de
+                    código enquanto uma condição específica
+                    for verdadeira. Ele tem a seguinte sintaxe:</p>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span class="numberListD">1</span> <span class="tag">while</span> ( condição ) {
+                </p>
+                <p class="boxDpText"><span class="numberListD">2</span> ㅤ <span class="comentario"> // código a ser
+                        executado enquanto for verdadeira
+                    </span></p>
+                <p class="boxDpText"><span class="numberListD">3</span> }</p>
+            </div>
+            <div class="boxC">
+                <p>A condição é avaliada antes de cada iteração do laço. Se a condição for verdadeira, o bloco de código
+                    é executado. Caso contrário, o laço é interrompido.</p>
+                <h2>do-while</h2>
+                <p>O laço <span style="font-weight: 600;">do-while</span> é semelhante ao laço <span
+                        style="font-weight: 600;">while</span>, mas o bloco de código é executado pelo menos uma vez,
+                    antes de a condição ser avaliada. Ele tem a seguinte sintaxe:</p>
+            </div>
+            <div class="boxD">
+                <p class="boxDpText"><span class="numberListD">1</span> <span class="tag">do</span> { </p>
+                <p class="boxDpText"><span class="numberListD">2</span> ㅤ <span class="comentario"> // código a ser
+                        executado
+                    </span></p>
+                <p class="boxDpText"><span class="numberListD">3</span> } <span class="tag">while</span> ( condição ) ;
+                </p>
+            </div>
+            <div class="boxC">
+                <p>A condição é avaliada após cada iteração do laço. Se a condição for verdadeira, o bloco de código é
+                    executado novamente. Caso contrário, o laço é interrompido.</p>
+            </div>
+        </div>
+        <div class="boxA">
+            <div class="boxB">
+                <p>Qual a diferença entre o comando for e while?</p>
+            </div>
+            <div class="boxC">
+                <p>A diferença entre o comando <span style="font-weight: 600;">for</span> e <span
+                        style="font-weight: 600;">while</span> em JavaScript é a maneira como a
+                    condição de repetição é
+                    verificada.</p>
+                <p>A principal diferença entre os dois é que no comando <span style="font-weight: 600;">for</span>, a
+                    inicialização e o incremento/decremento
+                    são especificados explicitamente no cabeçalho do laço, enquanto no comando <span
+                        style="font-weight: 600;">while</span>, a condição é
+                    avaliada antes de cada iteração, mas a inicialização e o incremento/decremento devem ser
+                    especificados no corpo do laço.</p>
+                <p>No entanto, o comando <span style="font-weight: 600;">for</span> é geralmente preferido em situações
+                    em que a iteração é baseada em um
+                    contador, enquanto o comando <span style="font-weight: 600;">while</span> é mais adequado em
+                    situações em que a condição de parada é mais
+                    complexa ou depende de valores externos ao laço.</p>
+            </div>
+        </div>
+        <div class="boxA">
+            <div class="boxB">
+                <p style="font-weight: 600;">Exercícios</p>
+            </div>
+            <div class="boxC">
+                <table>
+                    <tr>
+                        <th>Page</th>
+                    </tr>
+                    <tr>
+                        <td><a href="../eadExercicios/ead5-1.html" class="menu__link" target="_blank">Exercício 1</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="../eadExercicios/ead5-2.html" class="menu__link" target="_blank">Exercício 2</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="../eadExercicios/ead5-3.html" class="menu__link" target="_blank">Exercício 3</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

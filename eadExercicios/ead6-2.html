@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        alert("Faça um programa que apresente o seguinte menu ao usuário:\n1- Somar\n2- Subtrair\n3- Multiplicar\n4- Dividir\n5- Raiz Quadrada\n6- Potência\n0- Sair\nDe acordo com a opção que o usuário informar, solicite dois números para ser aplicado as opções de 1 a 4. Se a opção selecionada for o número 5, solicite apenas um número e mostre a raiz quadrada desse número.\nCaso a opção selecionada seja 6, peça dois números, o primeiro será a base e o segundo a potência. Mostre o resultado final.\nAo selecionar a opçao 0 - Sair, mostre a mensagem: 'Obrigado por usar nossa calculadora.'");
+
+        let opcao = -1;
+
+        while (opcao !== 0) {
+            opcao = Number(prompt(
+                "1- Somar\n2- Subtrair\n3- Multiplicar\n4- Dividir\n5- Raiz Quadrada\n6- Potência\n0- Sair"
+            ));
+
+            if (opcao == 0) {
+                alert("Obrigado por usar nossa calculadora.");
+                break;
+            }
+
+            const num1 = Number(prompt("Digite o primeiro número:"));
+            const num2 = Number(prompt("Digite o segundo número:"));
+
+            switch (opcao) {
+                case 1:
+                    alert(`Resultado: ${num1 + num2}`);
+                    break;
+                case 2:
+                    alert(`Resultado: ${num1 - num2}`);
+                    break;
+                case 3:
+                    alert(`Resultado: ${num1 * num2}`);
+                    break;
+                case 4:
+                    if (num2 == 0) {
+                        alert("Não é possível dividir por zero.");
+                    } else {
+                        alert(`Resultado: ${num1 / num2}`);
+                    }
+                    break;
+                case 5:
+                    if (num1 < 0) {
+                        alert("Não é possível calcular a raiz quadrada de um número negativo.");
+                    } else {
+                        alert(`Resultado: ${Math.sqrt(num1)}`);
+                    }
+                    break;
+                case 6:
+                    alert(`Resultado: ${Math.pow(num1, num2)}`);
+                    break;
+                default:
+                    alert("Opção inválida.");
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

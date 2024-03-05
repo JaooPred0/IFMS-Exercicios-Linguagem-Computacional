@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        alert("1- Faça um programa que solicite ao usuário informar 5 números. Ao final, mostre todos os números armazenados dentro do vetor.");
+
+        const numbers = [];
+        for (let i = 0; i < 5; i++) {
+            const number = prompt(`Por favor, insira o número ${i + 1}:`);
+            numbers[i] = number;
+        }
+        alert(`Aqui estão os números que você inseriu: ${numbers}`);
+    </script>
+</body>
+
+</html>

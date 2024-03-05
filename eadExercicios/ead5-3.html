@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        alert("Faça um programa que solicite 10 números. Ao final, mostre o menor e maior número digitado.");
+
+        let menor = 0;
+        let maior = 0;
+
+        for (let i = 0; i < 10; i++) {
+            let numero = Number(prompt("Digite o " + (i + 1) + "º número:"));
+            if (numero < menor) {
+                menor = numero;
+            }
+            if (numero > maior) {
+                maior = numero;
+            }
+        }
+
+        alert("Menor número: " + menor);
+        alert("Maior número: " + maior);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<body>
+    <script>
+        alert("Faça um programa que solicite ao usuário digitar 10 valores. Depois, peça para o usuário digitar um valor X para ser pesquisado dentro do vetor e verificar se o número esta dentro do vetor. Caso esteja, mostrar em qual posição este número esta armazenado.\nEx:\nValores lidos: 10, 30, 15, 1, 7, 100, 350, -4, -97, 4.\nValor pesquisado: 100.\nResposta: Número encontrado. Está na posição 5.");
+
+        let numbers = [];
+        let procurarValor;
+
+        for (let i = 0; i < 10; i++) {
+            let number = Number(prompt("Digite um número:"));
+            numbers.push(number);
+        }
+        procurarValor = Number(prompt("Digite um valor para pesquisar:"));
+        let position = numbers.indexOf(procurarValor);
+        if (position !== -1) {
+            alert(`Número encontrado. Está na posição ${position}.`);
+        } else {
+            alert("Número não encontrado.");
+        }
+    </script>
+</body>
+
+</html>
